@@ -1,0 +1,208 @@
+{
+  "navigation": {
+    "home": "Home",
+    "cv": "CV",
+    "links": "My Links",
+    "projects": "Projects"
+  },
+  "home": {
+    "name": "Artur Mukaev",
+    "role": "FullStack JavaScript Developer",
+    "bio": "Dedicated Frontend/Fullstack JavaScript Developer with 4.5+ years of production experience. Senior-level frontend skills with strong React ecosystem knowledge and middle-level backend capabilities with Node.js and Nest.js. Experienced in leading technical projects, mentoring junior developers, and delivering high-quality code.",
+    "welcomeTitle": "Welcome to My Digital Space",
+    "welcomeDescription": "This website serves as my digital portfolio and professional hub. Navigate through the sections above to explore my experience, skills, projects, and professional connections. Each section is designed to provide comprehensive information about my professional journey.",
+    "facts": "Some facts about me",
+    "contactMe": "Contact Me",
+    "skills": {
+      "bachelor": "Graduated from the \"Business Informatics\" program with a honors diploma",
+      "master": "Master's student of the \"Project Management\" program",
+      "frontend": "Frontend developer with 5+ years of commercial experience in React/Vue",
+      "backend": "Backend developer with 2+ years of commercial experience in Node/Nest/Express",
+      "english": "English level - C1",
+      "tennis": "Play tennis at the Tour level. Also train others",
+      "camp": "For several shifts was responsible for the entertainment program in a children's language camp",
+      "trading": "I am into trading and investment",
+      "entrepreneurship": "Entrepreneur"
+    },
+    "sections": {
+      "home": {
+        "title": "Home",
+        "description": "Personal information, navigation to sections, some facts about me"
+      },
+      "cv": {
+        "title": "CV",
+        "description": "Detailed resume with work experience, education, and skills"
+      },
+      "links": {
+        "title": "My Links",
+        "description": "Contact information and links to social networks"
+      },
+      "projects": {
+        "title": "Projects",
+        "description": "Portfolio of completed and ongoing projects"
+      }
+    }
+  },
+  "cv": {
+    "personalInformation": "Personal Information",
+    "workExperience": "Work Experience",
+    "education": "Education",
+    "skillsTechnologies": "Skills & Technologies",
+    "achievements": "Main responsibilities and achievements:",
+    "personalInfo": {
+      "name": "Name",
+      "dateOfBirth": "Date of birth",
+      "citizenship": "Citizenship",
+      "location": "Location",
+      "englishLevel": "English level",
+      "nameValue": "Artur Mukaev",
+      "citizenshipValue": "Russian Federation",
+      "locationValue": "city of Perm"
+    },
+    "skills": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "devops": "DevOps & Tools",
+      "architecture": "Architecture & Methodologies",
+      "softSkills": "Soft Skills"
+    },
+    "experience": {
+      "greenData": {
+        "title": "GreenData, Perm",
+        "position": "Lead Frontend Developer, Distr HardTech",
+        "period": "April 2023 - present",
+        "description": "Developing the frontend part of the GreenData Low-code platform. The platform is designed to create complex, high-load business applications without the help of programmers.",
+        "achievements": {
+          "0": "Development and support of the design system (Stencil, StoryBook, Jest)",
+          "1": "Adding SIP telephony to the platform (WebRTC, WebSockets, third-party PBX)",
+          "2": "Complete rewrite of the Kanban Board module",
+          "3": "Creation of a rating widget from scratch",
+          "4": "Development of an MVP version of update installation functionality using CI/CD (WebSockets)",
+          "5": "Development of new functionality in the analytical panels module (HighCharts.js, google-maps-react, leaflet, OSM maps)",
+          "6": "Development of a new tagging system for objects in the system",
+          "7": "Code review and mentoring",
+          "8": "Extraction of individual modules of the system into packages (MicroFrontend)",
+          "9": "Development of SSR applications (Next.js)",
+          "10": "Support of legacy code projects"
+        }
+      },
+      "fsght": {
+        "title": "Forsight, Perm",
+        "position": "Frontend Developer, BPM",
+        "period": "July 2021 - April 2023",
+        "description": "Developed a web application for editing and monitoring processes in the BPM notation.",
+        "achievements": {
+          "0": "Development of an algorithm for establishing connections between shapes on the canvas (KonvaJs)",
+          "1": "Together with the team, released the MVP version of a new application for working with business processes within 3 months",
+          "2": "Mentored and helped new interns grow within the team",
+          "3": "Covered old and new code with unit tests using Jest and React Testing Library, and e2e tests using Cypress",
+          "4": "Solved business and technical tasks related to application development",
+          "5": "Maintained legacy Angular applications"
+        }
+      },
+      "parma": {
+        "title": "Parma TG, Perm",
+        "position": "Intern Frontend Developer",
+        "period": "February 2021 - June 2021",
+        "description": "Successfully completed an internship for students at Parma TG.",
+        "achievements": {
+          "0": "Developed a React/Redux application under the guidance of senior developers",
+          "1": "Received certification for successful completion of training"
+        }
+      }
+    },
+    "ed": {
+      "bachelor": {
+        "institution": "Higher School of Economics",
+        "title": "Bachelor - Business Informatics",
+        "period": "September 2019 - June 2023",
+        "description": "Information technologies, economics and management. Graduated with a red diploma. GPA: 8.45"
+      },
+      "master": {
+        "institution": "Higher School of Economics",
+        "title": "Master - Business Development Management",
+        "period": "September 2023 - June 2025",
+        "description": "Studying on the \"Project Management\" program. GPA: 6.63"
+      }
+    }
+  },
+  "links": {
+    "title": "Professional Links & Contact",
+    "contactInformation": "Contact Information",
+    "links": {
+      "email": {
+        "title": "Email",
+        "description": "Primary contact method for professional inquiries"
+      },
+      "telegram": {
+        "title": "Telegram",
+        "description": "Quick messaging and communication"
+      },
+      "linkedin": {
+        "title": "LinkedIn",
+        "description": "Professional network and career updates"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Code repositories and some of my contributions"
+      }
+    }
+  },
+  "projects": {
+    "title": "Projects Portfolio",
+    "noProjects": {
+      "title": "No Projects Yet"
+    },
+    "onGithub": "More projects on my Github",
+    "actions": {
+      "code": "Code",
+      "demo": "Demo",
+      "expand": "Show more",
+      "collapse": "Show less",
+      "privateCode": "Private repository"
+    },
+    "meta": {
+      "personalProject": "Personal Project"
+    },
+    "status": {
+      "inProgress": "In Progress",
+      "completed": "Completed",
+      "frozen": "Frozen",
+      "notCompleted": "Not Completed"
+    },
+    "ligaMasters": {
+      "title": "Liga Masters",
+      "description": "Digitalization project for the household appliance repair service \"Liga Masters\". Within the project, an SEO-optimized web platform on Next.js (SSR) was implemented. A service for storing and working with applications and media files using Nest.js + MongoDB was also implemented. A Telegram bot was written for managing applications, allowing CRUD operations with them. The bot was also integrated with the application storage service, which allowed it to instantly report new applications directly to the chat of household appliance repair technicians. 3 months after launch, the liga-masters.ru website was in the top 10 Google and Yandex search results for main queries related to household appliance repair in Perm.",
+      "team": "The project was implemented jointly with master repair technicians"
+    },
+    "giftHelper": {
+      "title": "Gift Helper",
+      "description": "A project to create a platform for choosing gifts. A kind of gift catalog across multiple categories. The main feature is a section with an AI assistant that will help you choose a personalized gift based on the characteristics you enter. The platform also has the ability to create wish lists and share them with friends.",
+      "team": "Personal project"
+    },
+    "sexCards": {
+      "title": "Sex Cards",
+      "description": "More info coming soon...",
+      "team": "Personal project"
+    },
+    "footballTeam": {
+      "title": "Football Team Maker",
+      "description": "Application for creating and mixing by strength football squads from added players",
+      "team": "Personal project"
+    }
+  },
+  "common": {
+    "github": "GitHub",
+    "linkedin": "LinkedIn",
+    "stack": "Stack"
+  },
+  "months": {
+    "october": "October",
+    "november": "November",
+    "december": "December",
+    "january": "January",
+    "february": "February",
+    "september": "September",
+    "july": "July"
+  }
+}
