@@ -85,6 +85,14 @@ const SkillsSection = styled(motion.div)`
 
 const SkillsGrid = styled(Row)`
   margin-top: 24px;
+  
+  @media (max-width: 768px) {
+    margin-top: 16px;
+  }
+  
+  @media (max-width: 480px) {
+    margin-top: 12px;
+  }
 `;
 
 const SkillCard = styled(Card)`
@@ -105,6 +113,29 @@ const SkillCard = styled(Card)`
 
   .ant-card-body {
     background: transparent;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+  }
+
+  @media (max-width: 768px) {
+    min-height: 120px;
+    
+    .ant-card-body {
+      padding: 12px;
+      min-height: 80px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    min-height: 100px;
+    
+    .ant-card-body {
+      padding: 8px;
+      min-height: 60px;
+    }
   }
 `;
 
@@ -311,7 +342,7 @@ const Home: React.FC = () => {
                     color={skill.color}
                     style={{
                       fontSize: '14px',
-                      padding: '8px 16px',
+                      padding: '8px 12px',
                       border: '1px solid #00ff41',
                       borderRadius: '8px',
                       background: 'rgba(0, 0, 0, 0.8)',
@@ -321,8 +352,13 @@ const Home: React.FC = () => {
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      height: '100%',
+                      height: 'auto',
+                      minHeight: '40px',
                       width: '100%',
+                      wordBreak: 'break-word',
+                      overflowWrap: 'break-word',
+                      whiteSpace: 'normal',
+                      lineHeight: '1.2',
                     }}
                   >
                     {skill.name}
