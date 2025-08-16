@@ -305,7 +305,7 @@ const CV: React.FC = () => {
                   <div style={{ color: '#00ff41', fontWeight: 'bold' }}>
                     {job.company}
                   </div>
-                  <div style={{ color: '#00ff41', fontSize: '14px' }}>
+                  <div style={{ color: '#00ff41', fontSize: '14px', wordBreak: 'break-word', overflowWrap: 'break-word', whiteSpace: 'normal', lineHeight: '1.2' }}>
                     {job.position}
                   </div>
                 </div>
