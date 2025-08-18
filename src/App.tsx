@@ -331,6 +331,10 @@ function App() {
   }, [i18n]);
 
   useEffect(() => {
+    if (selectedKey === 'projects') {
+      return;
+    }
+
     const handleScroll = () => {
       setScrollY(window.scrollY);
     };
@@ -339,7 +343,7 @@ function App() {
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [selectedKey]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -445,19 +449,20 @@ function App() {
         </AnimatePresence>
       </StyledContent>
       
-      <ScrollToTopButton
-        onClick={scrollToTop}
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ 
-          opacity: scrollY > 100 ? 1 : 0,
-          scale: scrollY > 100 ? 1 : 0
-        }}
-        transition={{ duration: 0.3 }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-      >
-        <UpOutlined />
-      </ScrollToTopButton>
+      {selectedKey !== 'projects' && (
+        <ScrollToTopButton
+          onClick={scrollToTop}
+          style={{ 
+            opacity: scrollY > 100 ? 1 : 0,
+            pointerEvents: scrollY > 100 ? 'auto' : 'none',
+            transition: 'opacity 0.2s ease-in-out'
+          }}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+        >
+          <UpOutlined />
+        </ScrollToTopButton>
+      )}
     </StyledLayout>
   );
 }
