@@ -188,9 +188,21 @@ const SectionCard = styled(motion.div)`
   justify-content: space-between;
   overflow: hidden;
   text-overflow: ellipsis;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 25px rgba(0, 255, 65, 0.4);
+    transform: translateY(-2px);
+  }
 `;
 
-const Home: React.FC = () => {
+interface HomeProps {
+  onNavigate: (key: string) => void;
+}
+
+const Home: React.FC<HomeProps> = ({ onNavigate }) => {
   const { t } = useTranslation();
 
   const skills = useMemo(
@@ -214,21 +226,25 @@ const Home: React.FC = () => {
         icon: <UserOutlined />,
         title: t('home.sections.home.title'),
         description: t('home.sections.home.description'),
+        key: 'home',
       },
       {
         icon: <FileTextOutlined />,
         title: t('home.sections.cv.title'),
         description: t('home.sections.cv.description'),
+        key: 'cv',
       },
       {
         icon: <LinkOutlined />,
         title: t('home.sections.links.title'),
         description: t('home.sections.links.description'),
+        key: 'links',
       },
       {
         icon: <CodeOutlined />,
         title: t('home.sections.projects.title'),
         description: t('home.sections.projects.description'),
+        key: 'projects',
       },
     ],
     [t]
@@ -295,6 +311,10 @@ const Home: React.FC = () => {
                 <SectionCard
                   variants={itemVariants}
                   whileHover={{ scale: 1.02 }}
+                  onClick={() => {
+                    onNavigate(section.key);
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }}
                 >
                   <div
                     style={{

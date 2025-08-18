@@ -7,6 +7,7 @@ import {
   FileTextOutlined,
   LinkOutlined,
   ProjectOutlined,
+  UpOutlined,
 } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 import CV from './components/CV';
@@ -247,6 +248,53 @@ const LanguageSwitcher = styled(Space)`
   }
 `;
 
+const ScrollToTopButton = styled(motion.button)`
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #00ff41;
+  background: rgba(0, 0, 0, 0.8);
+  color: #00ff41;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.3);
+  transition: all 0.3s ease;
+
+  &:hover {
+    background: rgba(0, 255, 65, 0.1);
+    box-shadow: 0 0 30px rgba(0, 255, 65, 0.5);
+    transform: translateY(-2px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  @media (max-width: 768px) {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  @media (max-width: 480px) {
+    bottom: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+`;
+
 const contentVariants = {
   enter: {
     opacity: 0,
@@ -267,6 +315,7 @@ const contentVariants = {
 
 function App() {
   const [selectedKey, setSelectedKey] = useState('home');
+  const [scrollY, setScrollY] = useState(0);
   const { t, i18n } = useTranslation();
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language || 'en');
 
@@ -280,6 +329,21 @@ function App() {
       i18n.off('languageChanged', handleLanguageChange);
     };
   }, [i18n]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const menuItems = [
     {
@@ -311,7 +375,7 @@ function App() {
   const renderContent = () => {
     switch (selectedKey) {
       case 'home':
-        return <Home />;
+        return <Home onNavigate={setSelectedKey} />;
       case 'cv':
         return <CV />;
       case 'links':
@@ -319,7 +383,7 @@ function App() {
       case 'projects':
         return <Projects />;
       default:
-        return <Home />;
+        return <Home onNavigate={setSelectedKey} />;
     }
   };
 
@@ -380,6 +444,20 @@ function App() {
           </ContentContainer>
         </AnimatePresence>
       </StyledContent>
+      
+      <ScrollToTopButton
+        onClick={scrollToTop}
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ 
+          opacity: scrollY > 100 ? 1 : 0,
+          scale: scrollY > 100 ? 1 : 0
+        }}
+        transition={{ duration: 0.3 }}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.9 }}
+      >
+        <UpOutlined />
+      </ScrollToTopButton>
     </StyledLayout>
   );
 }
