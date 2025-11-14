@@ -185,6 +185,11 @@
       "description": "More info coming soon...",
       "team": "Personal project"
     },
+    "metal": {
+      "title": "SteelCraft",
+      "description": "Project creation of a web platform for a company providing services in the field of metalworking and manufacturing of parts from metal \"SteelCraft\". A SEO-optimized website was implemented on Next.js, integrated with the Telegram API for automatic sending of applications from the site.",
+      "team": "Project implemented for the company \"SteelCraft\""
+    },
     "footballTeam": {
       "title": "Football Team Maker",
       "description": "Application for creating and mixing by strength football squads from added players",

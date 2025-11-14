@@ -281,6 +281,30 @@ const Projects: React.FC = () => {
       },
       {
         id: 2,
+        title: t('projects.metal.title'),
+        description: t('projects.metal.description'),
+        image:
+          'https://raw.githubusercontent.com/ArturMukaev/metal/421cb3357ec044ac33171c83c80c112c1673858b/public/metalworking.svg',
+        tags: [
+          'React',
+          'TypeScript',
+          'Tailwind CSS',
+          'Framer Motion',
+          'Next.js',
+          'Telegram API',
+          'Docker',
+          'SEO',
+          'SSR',
+        ],
+        date: `${t('months.november')} 2025`,
+        status: t('projects.status.completed'),
+        github: 'https://github.com/ArturMukaev/metal',
+        demo: 'https://www.perm-metalloobrabotka.ru/',
+        type: t('projects.metal.team'),
+        isPrivate: false,
+      },
+      {
+        id: 3,
         title: t('projects.giftHelper.title'),
         description: t('projects.giftHelper.description'),
         image:
@@ -307,7 +331,7 @@ const Projects: React.FC = () => {
         isPrivate: true,
       },
       {
-        id: 3,
+        id: 4,
         title: t('projects.sexCards.title'),
         description: t('projects.sexCards.description'),
         tags: ['React', 'TypeScript'],
@@ -319,7 +343,7 @@ const Projects: React.FC = () => {
         isPrivate: true,
       },
       {
-        id: 4,
+        id: 5,
         title: t('projects.footballTeam.title'),
         description: t('projects.footballTeam.description'),
         tags: ['React', 'JavaScript', 'HTML', 'CSS', 'SVG', 'Redux'],
