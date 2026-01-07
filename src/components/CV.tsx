@@ -229,9 +229,9 @@ const CV: React.FC = () => {
         'WebSockets',
         'Telegram API',
         'SQL databases',
-        'C#',
+        'Java',
       ],
-      devops: ['Git', 'Docker', 'Webpack', 'Babel', 'CI/CD pipelines'],
+      devops: ['Git', 'Docker', 'Webpack', 'Babel', 'CI/CD pipelines', 'Kubernetes'],
       architecture: [
         'Feature Sliced Design',
         'SEO Optimization',
