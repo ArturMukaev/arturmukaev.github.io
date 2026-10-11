@@ -256,6 +256,26 @@ const Projects: React.FC = () => {
     () => [
       {
         id: 1,
+        title: t('projects.racketHome.title'),
+        description: t('projects.racketHome.description'),
+        image: 'https://rackethome.ru/images/logo.png',
+        tags: [
+          'React',
+          'TypeScript',
+          'Next.js',
+          'SEO',
+          'SSR',
+          'E-commerce',
+        ],
+        date: `${t('months.may')} 2026`,
+        status: t('projects.status.completed'),
+        github: '#',
+        demo: 'https://rackethome.ru/',
+        type: t('projects.racketHome.team'),
+        isPrivate: true,
+      },
+      {
+        id: 2,
         title: t('projects.ligaMasters.title'),
         description: t('projects.ligaMasters.description'),
         image:
@@ -280,7 +300,7 @@ const Projects: React.FC = () => {
         isPrivate: false,
       },
       {
-        id: 2,
+        id: 3,
         title: t('projects.metal.title'),
         description: t('projects.metal.description'),
         image:
@@ -304,7 +324,7 @@ const Projects: React.FC = () => {
         isPrivate: false,
       },
       {
-        id: 3,
+        id: 4,
         title: t('projects.giftHelper.title'),
         description: t('projects.giftHelper.description'),
         image:
@@ -331,7 +351,7 @@ const Projects: React.FC = () => {
         isPrivate: true,
       },
       {
-        id: 4,
+        id: 5,
         title: t('projects.sexCards.title'),
         description: t('projects.sexCards.description'),
         tags: ['React', 'TypeScript'],
@@ -343,7 +363,7 @@ const Projects: React.FC = () => {
         isPrivate: true,
       },
       {
-        id: 5,
+        id: 6,
         title: t('projects.footballTeam.title'),
         description: t('projects.footballTeam.description'),
         tags: ['React', 'JavaScript', 'HTML', 'CSS', 'SVG', 'Redux'],

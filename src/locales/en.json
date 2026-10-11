@@ -170,6 +170,11 @@
       "frozen": "Frozen",
       "notCompleted": "Not Completed"
     },
+    "racketHome": {
+      "title": "Racket Home",
+      "description": "Own e-commerce project — premium wall frames for tennis and paddle rackets. Built an SEO-optimized online store on Next.js with a product catalog, shopping cart, frame configurator, and checkout flow. The product turns a racket into a piece of interior design: frames with decorative backgrounds, handmade craftsmanship, and models for tennis and paddle.",
+      "team": "Project founder"
+    },
     "ligaMasters": {
       "title": "Liga Masters",
       "description": "Digitalization project for the household appliance repair service \"Liga Masters\". Within the project, an SEO-optimized web platform on Next.js (SSR) was implemented. A service for storing and working with applications and media files using Nest.js + MongoDB was also implemented. A Telegram bot was written for managing applications, allowing CRUD operations with them. The bot was also integrated with the application storage service, which allowed it to instantly report new applications directly to the chat of household appliance repair technicians. 3 months after launch, the liga-masters.ru website was in the top 10 Google and Yandex search results for main queries related to household appliance repair in Perm.",
@@ -208,6 +213,7 @@
     "january": "January",
     "february": "February",
     "september": "September",
-    "july": "July"
+    "july": "July",
+    "may": "May"
   }
 }
