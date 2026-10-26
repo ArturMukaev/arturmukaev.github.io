@@ -130,8 +130,8 @@ const Links: React.FC = () => {
         icon: <MailOutlined />,
         title: t('links.links.email.title'),
         description: t('links.links.email.description'),
-        url: 'mailto:artur.mukaev@mail.ru',
-        label: 'artur.mukaev@mail.ru',
+        url: 'mailto:artur.mukaev1@gmail.com',
+        label: 'artur.mukaev1@gmail.com',
       },
       {
         icon: <MessageOutlined />,
@@ -202,7 +202,7 @@ const Links: React.FC = () => {
               <Col xs={24} md={12}>
                 <InfoItem>
                   <MailOutlined />
-                  <strong>Email:</strong> artur.mukaev@mail.ru
+                  <strong>Email:</strong> artur.mukaev1@gmail.com
                 </InfoItem>
                 <InfoItem>
                   <MessageOutlined />

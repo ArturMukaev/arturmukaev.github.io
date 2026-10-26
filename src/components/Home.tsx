@@ -397,7 +397,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       >
         <motion.div variants={itemVariants}>
           <ContactButton
-            href="mailto:artur.mukaev@mail.ru"
+            href="mailto:artur.mukaev1@gmail.com"
             whileHover={{ scale: 1.05 }}
           >
             <MailOutlined />
